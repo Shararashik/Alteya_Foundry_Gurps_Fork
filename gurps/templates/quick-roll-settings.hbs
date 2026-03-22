@@ -1,0 +1,30 @@
+<div>
+  <div>{{localize 'GURPS.settingHintUseQuickRolls'}}</div>
+  <hr />
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollUse'}}</label>
+    <input type='checkbox' name='enabled' {{checked settings.enabled}} />
+  </div>
+  <hr />
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollShowAttributes'}}</label>
+    <input type='checkbox' name='attributeChecks' {{checked settings.attributeChecks}} />
+  </div>
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollShowOther'}}</label>
+    <input type='checkbox' name='otherChecks' {{checked settings.otherChecks}} />
+  </div>
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollShowAttacks'}}</label>
+    <input type='checkbox' name='attackChecks' {{checked settings.attackChecks}} />
+  </div>
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollShowDefenses'}}</label>
+    <input type='checkbox' name='defenseChecks' {{checked settings.defenseChecks}} />
+  </div>
+  <div class='form-group'>
+    <label>{{localize 'GURPS.quickRollShowMarked'}}</label>
+    <input type='checkbox' name='markedChecks' {{checked settings.markedChecks}} />
+  </div>
+  <button type='submit'><i class='fa fa-save'></i><span>{{localize 'GURPS.update'}}</span></button>
+</div>

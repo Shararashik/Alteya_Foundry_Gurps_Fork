@@ -1,0 +1,40 @@
+<form class='{{cssClass}}' autocomplete='off'>
+  <div class='active-effects-list' style='position: relative;'>
+    <div id='gga-effects-data-list' class='gga-effects-list table'>
+      <div class='label'>{{localize 'GURPS.effectsEffect'}}</div>
+      <div class='label'>?</div>
+      <div><a id='template-add' class='effect-control button icon' data-action='create'><i class='fas fa-plus'></i></a>
+      </div>
+      {{#each effects}}
+        <input
+          name='effect-name'
+          class='gcs-input clickable effect-control'
+          data-effect-id='{{id}}'
+          data-action='edit'
+          type='text'
+          readonly
+          value='{{name}}'
+        />
+        <input class='effect-control' type='checkbox' data-action='disable' data-effect-id='{{id}}' name='disabled' />
+        <div class='vertical-center'>
+          <a
+            class='effect-control'
+            data-effect-id='{{id}}'
+            data-action='delete'
+            title='{{localize "GURPS.delete"}}'
+            style='padding: 6px 20px 0 10px;'
+          >
+            <i class='fas fa-trash'></i>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+
+    <footer class='sheet-footer'>
+      <button type='submit' class='effect-control' data-action='apply'><i class='fas fa-save'></i>{{localize
+          'GURPS.applySelectedTokens'
+        }}</button>
+    </footer>
+
+  </div>
+</form>

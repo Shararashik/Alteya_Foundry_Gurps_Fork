@@ -1,0 +1,221 @@
+<!-- Added to color the rollable parts of the character sheet. Stevil... -->
+<form id='color-character-sheet-settings' autocomplete='off' class='gga-app'>
+  <h3>{{localize 'GURPS.settingColorSheetMenuTitle' }}</h3>
+  <aside>{{localize 'GURPS.settingColorSheetMenuHint' }}</aside>
+  <div class='section'>
+    <div id='entry-list' class='gurps-sheet-colors overflowy'>
+      <header>{{localize 'GURPS.colorSheetMenuOverride' }}</header>
+      <header>{{localize 'GURPS.colorSheetMenuCustomColors' }}</header>
+      <header>{{localize 'GURPS.colorSheetMenuColorAreas' }}</header>
+      {{#each allColors}}
+        <hr />
+        <div class='override-color'><input type='checkbox' id='{{ rollable_css }}' {{#if color_override}}
+            checked='checked' {{/if}} /></div>
+        <div class='the-colors'>
+          <!-- Color for Background -->
+          <div for='{{ rollable_css }}' class='{{ rollable_css }} pick-colors'>
+            <div id='colorPicker'>
+              <a class='color'>
+                <div class='colorInner'></div>
+              </a>
+              <div class='track'></div>
+              <ul class='dropdown'>
+                <li></li>
+              </ul>
+              <input type='hidden' class='default-{{ rollable_css }}' value='{{ default_color_background }}' />
+              <input type='hidden' class='colorInput' value='{{ color_background }}' />
+            </div>
+          </div>
+          <div class='area-colors'>
+            {{#switch area}}
+              {{#case 'Attributes'}}
+                {{localize 'GURPS.colorSheetMenuAreasAttributesColor' }}
+              {{/case}}
+              {{#case 'Dodge'}}
+                {{localize 'GURPS.colorSheetMenuAreasDodgeColor' }}
+              {{/case}}
+              {{#case 'Damage'}}
+                {{localize 'GURPS.colorSheetMenuAreasDamageColor' }}
+              {{/case}}
+              {{#case 'Block'}}
+                {{localize 'GURPS.colorSheetMenuAreasBlockColor' }}
+              {{/case}}
+              {{#case 'Parry'}}
+                {{localize 'GURPS.colorSheetMenuAreasParryColor' }}
+              {{/case}}
+              {{#case 'Weapons'}}
+                {{localize 'GURPS.colorSheetMenuAreasWeaponsColor' }}
+              {{/case}}
+              {{#case 'Skills'}}
+                {{localize 'GURPS.colorSheetMenuAreasSkillsColor' }}
+              {{/case}}
+              {{#case 'Spells'}}
+                {{localize 'GURPS.colorSheetMenuAreasSpellsColor' }}
+              {{/case}}
+              {{#case 'OtF-Notes'}}
+                {{localize 'GURPS.colorSheetMenuAreasOtfNotesColor' }}
+              {{/case}}
+              {{#case 'Ads/Disads'}}
+                {{localize 'GURPS.colorSheetMenuAreasAdsDisadsColor' }}
+              {{/case}}
+            {{/switch}}
+          </div>
+          <br />
+          <!-- Color for Text -->
+          <div for='{{ rollable_css }}' class='{{ rollable_css }}-text pick-colors'>
+            <div id='colorPicker'>
+              <a class='color'>
+                <div class='colorInner'></div>
+              </a>
+              <div class='track'></div>
+              <ul class='dropdown'>
+                <li></li>
+              </ul>
+              <input type='hidden' class='default-{{ rollable_css }}-text' value='{{ default_color_text }}' />
+              <input type='hidden' class='colorInput' value='{{ color_text }}' />
+            </div>
+          </div>
+          <div class='area-colors'>
+            {{#switch area}}
+              {{#case 'Attributes'}}
+                {{localize 'GURPS.colorSheetMenuAreasAttributesTextColor' }}
+              {{/case}}
+              {{#case 'Dodge'}}
+                {{localize 'GURPS.colorSheetMenuAreasDodgeTextColor' }}
+              {{/case}}
+              {{#case 'Damage'}}
+                {{localize 'GURPS.colorSheetMenuAreasDamageTextColor' }}
+              {{/case}}
+              {{#case 'Block'}}
+                {{localize 'GURPS.colorSheetMenuAreasBlockTextColor' }}
+              {{/case}}
+              {{#case 'Parry'}}
+                {{localize 'GURPS.colorSheetMenuAreasParryTextColor' }}
+              {{/case}}
+              {{#case 'Weapons'}}
+                {{localize 'GURPS.colorSheetMenuAreasWeaponsTextColor' }}
+              {{/case}}
+              {{#case 'Skills'}}
+                {{localize 'GURPS.colorSheetMenuAreasSkillsTextColor' }}
+              {{/case}}
+              {{#case 'Spells'}}
+                {{localize 'GURPS.colorSheetMenuAreasSpellsTextColor' }}
+              {{/case}}
+              {{#case 'OtF-Notes'}}
+                {{localize 'GURPS.colorSheetMenuAreasOtfNotesTextColor' }}
+              {{/case}}
+              {{#case 'Ads/Disads'}}
+                {{localize 'GURPS.colorSheetMenuAreasAdsDisadsTextColor' }}
+              {{/case}}
+            {{/switch}}
+          </div>
+          <br />
+          <!-- Color for Background Hover -->
+          <div for='{{ rollable_css }}' class='{{ rollable_css }}-hover pick-colors'>
+            <div id='colorPicker'>
+              <a class='color'>
+                <div class='colorInner'></div>
+              </a>
+              <div class='track'></div>
+              <ul class='dropdown'>
+                <li></li>
+              </ul>
+              <input type='hidden' class='default-{{ rollable_css }}-hover' value='{{ default_color_hover }}' />
+              <input type='hidden' class='colorInput' value='{{ color_hover }}' />
+            </div>
+          </div>
+          <div class='area-colors'>
+            {{#switch area}}
+              {{#case 'Attributes'}}
+                {{localize 'GURPS.colorSheetMenuAreasAttributesHoverColor' }}
+              {{/case}}
+              {{#case 'Dodge'}}
+                {{localize 'GURPS.colorSheetMenuAreasDodgeHoverColor' }}
+              {{/case}}
+              {{#case 'Damage'}}
+                {{localize 'GURPS.colorSheetMenuAreasDamageHoverColor' }}
+              {{/case}}
+              {{#case 'Block'}}
+                {{localize 'GURPS.colorSheetMenuAreasBlockHoverColor' }}
+              {{/case}}
+              {{#case 'Parry'}}
+                {{localize 'GURPS.colorSheetMenuAreasParryHoverColor' }}
+              {{/case}}
+              {{#case 'Weapons'}}
+                {{localize 'GURPS.colorSheetMenuAreasWeaponsHoverColor' }}
+              {{/case}}
+              {{#case 'Skills'}}
+                {{localize 'GURPS.colorSheetMenuAreasSkillsHoverColor' }}
+              {{/case}}
+              {{#case 'Spells'}}
+                {{localize 'GURPS.colorSheetMenuAreasSpellsHoverColor' }}
+              {{/case}}
+              {{#case 'OtF-Notes'}}
+                {{localize 'GURPS.colorSheetMenuAreasOtfNotesHoverColor' }}
+              {{/case}}
+              {{#case 'Ads/Disads'}}
+                {{localize 'GURPS.colorSheetMenuAreasAdsDisadsHoverColor' }}
+              {{/case}}
+            {{/switch}}
+          </div>
+          <br />
+          <!-- Color for Hover Text -->
+          <div for='{{ rollable_css }}' class='{{ rollable_css }}-hover-text pick-colors'>
+            <div id='colorPicker'>
+              <a class='color'>
+                <div class='colorInner'></div>
+              </a>
+              <div class='track'></div>
+              <ul class='dropdown'>
+                <li></li>
+              </ul>
+              <input type='hidden' class='default-{{ rollable_css }}-hover-text'
+                value='{{ default_color_hover_text }}' />
+              <input type='hidden' class='colorInput' value='{{ color_hover_text }}' />
+            </div>
+          </div>
+          <div class='area-colors'>
+            {{#switch area}}
+              {{#case 'Attributes'}}
+                {{localize 'GURPS.colorSheetMenuAreasAttributesHoverTextColor' }}
+              {{/case}}
+              {{#case 'Dodge'}}
+                {{localize 'GURPS.colorSheetMenuAreasDodgeHoverTextColor' }}
+              {{/case}}
+              {{#case 'Damage'}}
+                {{localize 'GURPS.colorSheetMenuAreasDamageHoverTextColor' }}
+              {{/case}}
+              {{#case 'Block'}}
+                {{localize 'GURPS.colorSheetMenuAreasBlockHoverTextColor' }}
+              {{/case}}
+              {{#case 'Parry'}}
+                {{localize 'GURPS.colorSheetMenuAreasParryHoverTextColor' }}
+              {{/case}}
+              {{#case 'Weapons'}}
+                {{localize 'GURPS.colorSheetMenuAreasWeaponsHoverTextColor' }}
+              {{/case}}
+              {{#case 'Skills'}}
+                {{localize 'GURPS.colorSheetMenuAreasSkillsHoverTextColor' }}
+              {{/case}}
+              {{#case 'Spells'}}
+                {{localize 'GURPS.colorSheetMenuAreasSpellsHoverTextColor' }}
+              {{/case}}
+              {{#case 'OtF-Notes'}}
+                {{localize 'GURPS.colorSheetMenuAreasOtfNotesHoverTextColor' }}
+              {{/case}}
+              {{#case 'Ads/Disads'}}
+                {{localize 'GURPS.colorSheetMenuAreasAdsDisadsHoverTextColor' }}
+              {{/case}}
+            {{/switch}}
+          </div>
+          <br />
+          <!-- End of Colors -->
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class='section'>
+    <button id='update'>
+      <i class='fas fa-save'></i>Update Colors</button>
+  </div>
+</form>

@@ -1,0 +1,191 @@
+{{!-- Hit Locations Table Partial --}}
+
+<style>
+.ms-locations-table-with-lochp .ms-loc-header,
+.ms-locations-table-with-lochp .ms-loc-row {
+  grid-template-columns: 3rem 1fr 4rem 3.5rem 7rem 1.5rem;
+}
+
+.ms-locations-table-with-lochp .ms-loc-dr {
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-locations-table-with-lochp .ms-loc-penalty {
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-loc-hp-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.ms-loc-hp-val {
+  font-weight: 700;
+  font-size: 0.85em;
+  color: #9fcf9f;
+  white-space: nowrap;
+  min-width: 30px;
+  text-align: center;
+}
+
+.ms-loc-hp-val-crippled {
+  color: #ff6666;
+}
+
+.ms-loc-hp-na {
+  color: #555;
+  font-size: 0.85em;
+  text-align: center;
+  width: 100%;
+}
+
+.ms-loc-hp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1;
+  border-radius: 3px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.ms-loc-hp-dec,
+.ms-loc-hp-inc {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #aaa;
+}
+
+.ms-loc-hp-dec:hover,
+.ms-loc-hp-inc:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.ms-loc-hp-reset {
+  background: rgba(150, 40, 40, 0.2);
+  border: 1px solid rgba(200, 60, 60, 0.35);
+  color: #cc4444;
+  font-size: 0.7em;
+}
+
+.ms-loc-hp-reset:hover {
+  background: rgba(200, 60, 60, 0.45);
+  color: #ff8888;
+}
+
+.ms-loc-cripple-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Прячем настоящий чекбокс */
+.ms-loc-cripple-check {
+  display: none;
+}
+
+/* Кастомная кнопка через label */
+.ms-loc-cripple-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 3px;
+  background: rgba(0,0,0,0.3);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+  font-size: 11px;
+  font-weight: bold;
+  color: transparent;
+  user-select: none;
+}
+
+.ms-loc-cripple-label:hover {
+  border-color: rgba(200, 60, 60, 0.6);
+}
+
+.ms-loc-cripple-check:checked + .ms-loc-cripple-label {
+  background: rgba(180, 40, 40, 0.7);
+  border-color: #cc4444;
+  color: #fff;
+}
+
+.ms-loc-cripple-empty {
+  width: 16px;
+  height: 16px;
+}
+
+.ms-loc-row.ms-loc-crippled {
+  background: rgba(180, 40, 40, 0.08);
+}
+</style>
+
+<div class='ms-section'>
+  <h3 class='ms-section-header'>
+    <i class='fas fa-person'></i>
+    {{localize 'GURPS.hitLocation'}}
+  </h3>
+  <div class='ms-locations-table ms-locations-table-with-lochp'>
+    <div class='ms-loc-header'>
+      <span>{{localize 'GURPS.roll'}}</span>
+      <span>{{localize 'GURPS.hitLocationWhere'}}</span>
+	<span style='text-align:center'>Pen.</span>
+	<span style='text-align:center'>DR</span>
+      <span title='Local damage / cripple threshold'>Loc.HP</span>
+      <span title='Crippling injury'>✕</span>
+    </div>
+    {{#each system.hitlocations}}
+    <div class='ms-loc-row {{#if localCrippled}}ms-loc-crippled{{/if}}'>
+      <span class='ms-loc-roll'>{{hitlocationroll where roll ../parent}}</span>
+      <span class='ms-loc-where'>{{localize (concat 'GURPS.hitLocation' where) where}}</span>
+      <span class='ms-loc-penalty {{gmod penalty}}' data-name='to hit {{where}}' data-otf='{{penalty}} to hit {{where}}'>{{{displayNumber (hitlocationpenalty where penalty ../parent)}}}</span>
+      <div class='ms-loc-dr {{#if (DRisModified this)}}ms-modified{{/if}}'>
+        {{#if ../document.limited}}
+          ??
+        {{else}}
+          <span class='ms-dr-display'>{{dr}}{{#each split as |value key|}}<span title='{{localize key}}'>/{{value}}{{#if (ne key 'cr')}}*{{/if}}</span>{{/each}}</span>
+          <input type='text' class='ms-dr-input' name='system.hitlocations.{{@key}}.import' value='{{import}}'/>
+        {{/if}}
+      </div>
+      <div class='ms-loc-hp-col'>
+        {{#if hasLocalHP}}
+          <button type='button' class='ms-loc-hp-btn ms-loc-hp-dec' data-location-key='{{@key}}' title='-1'>−</button>
+          <span class='ms-loc-hp-val {{#if localCrippled}}ms-loc-hp-val-crippled{{/if}}'>{{localHP}}/{{localHPMax}}</span>
+          <button type='button' class='ms-loc-hp-btn ms-loc-hp-inc' data-location-key='{{@key}}' title='+1'>+</button>
+          <button type='button' class='ms-loc-hp-btn ms-loc-hp-reset reset-local-hp' data-location-key='{{@key}}' title='Reset'>
+            <i class='fas fa-rotate-left'></i>
+          </button>
+        {{else}}
+          <span class='ms-loc-hp-na'>—</span>
+        {{/if}}
+      </div>
+      <div class='ms-loc-cripple-col'>
+        {{#if hasLocalHP}}
+          <input type='checkbox'
+                 id='cripple-{{@key}}'
+                 class='ms-loc-cripple-check'
+                 data-location-key='{{@key}}'
+                 {{#if localCrippled}}checked{{/if}} />
+          <label for='cripple-{{@key}}'
+                 class='ms-loc-cripple-label'
+                 title='Crippling injury on {{where}}'>×</label>
+        {{else}}
+          <span class='ms-loc-cripple-empty'></span>
+        {{/if}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

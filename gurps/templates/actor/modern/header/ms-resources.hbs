@@ -1,0 +1,214 @@
+<style>
+  .ms-resource-btn-dec {
+    color: #e05a5a !important;
+    border-color: #e05a5a !important;
+  }
+  .ms-resource-btn-dec:hover {
+    background: rgba(224, 90, 90, 0.2) !important;
+  }
+  .ms-resource-btn-inc {
+    color: #5cb378 !important;
+    border-color: #5cb378 !important;
+  }
+  .ms-resource-btn-inc:hover {
+    background: rgba(92, 179, 120, 0.2) !important;
+  }
+
+  /* Каждый ресурс — колонка: ряд кнопок сверху, лейбл снизу */
+  .ms-resource {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 3px !important;
+  }
+
+  .ms-resource-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Тултип с порогами */
+  .ms-threshold-tooltip {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .ms-threshold-tooltip .ms-threshold-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1c1a17;
+    border: 1px solid #3a3732;
+    border-radius: 4px;
+    padding: 4px 0;
+    z-index: 100;
+    min-width: 130px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .ms-threshold-tooltip:hover .ms-threshold-list {
+    display: block;
+  }
+  .ms-threshold-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px 8px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .ms-threshold-item.selected {
+    background: rgba(90, 158, 111, 0.2);
+    color: #5cb378;
+    font-weight: bold;
+  }
+  .ms-threshold-item .ms-threshold-val {
+    color: #a8a49c;
+    font-variant-numeric: tabular-nums;
+  }
+  .ms-threshold-item.selected .ms-threshold-val {
+    color: #5cb378;
+  }
+
+  /* Лейбл состояния */
+  .ms-condition-label {
+    font-size: 10px;
+    color: #a8a49c;
+    cursor: default;
+    padding: 1px 8px;
+    border-radius: 3px;
+    border: 1px solid #3a3732;
+    text-align: center;
+  }
+  .ms-condition-label.reeling, .ms-condition-label.tired {
+    color: #5a9dd8;
+    border-color: #5a9dd8;
+  }
+  .ms-condition-label.collapse, .ms-condition-label.check {
+    color: #e05a5a;
+    border-color: #e05a5a;
+  }
+  .ms-condition-label.dead, .ms-condition-label.destroyed,
+  .ms-condition-label.unconscious {
+    color: #888;
+    border-color: #555;
+    background: rgba(0,0,0,0.3);
+  }
+</style>
+
+<div class='ms-hp-fp-row'>
+  <!-- ================= HP ================= -->
+  <div class='ms-resource ms-hp' data-gurps-resource="HP">
+    <!-- ряд: бейдж + минус + бар + плюс + ресет -->
+    <div class='ms-resource-row'>
+      {{#if system.conditions.reeling}}
+        <span class='ms-condition-badge'
+              title='{{localize "GURPS.HP.reeling"}}'>R</span>
+      {{/if}}
+      <button type="button"
+              class="ms-resource-btn ms-resource-btn-dec"
+              data-operation="resource-dec"
+              title="-1 HP">−</button>
+      <div class='ms-resource-display'
+           data-edit-target='hp'
+           title='{{localize "GURPS.attributesHPNAME"}}'>
+        <div class='ms-resource-bar'>
+          <div class='ms-resource-fill'
+               style='width: {{percent system.HP.value system.HP.max}}%;'>
+          </div>
+        </div>
+        <span class='ms-resource-text {{#if (isNegative system.HP.value)}}ms-hp-negative{{/if}}'>
+          {{system.HP.value}}/{{system.HP.max}}
+        </span>
+      </div>
+      <div class='ms-resource-edit'>
+        <input type='number' name='system.HP.value' value='{{system.HP.value}}' class='ms-resource-input'/>
+        <span class='ms-resource-separator'>/</span>
+        <input type='number' name='system.HP.max' value='{{system.HP.max}}' class='ms-resource-input'/>
+      </div>
+      <button type="button"
+              class="ms-resource-btn ms-resource-btn-inc"
+              data-operation="resource-inc"
+              title="+1 HP">+</button>
+      <button type='button'
+              class='ms-resource-reset'
+              data-action='reset-hp'
+              title='Reset to max'>
+        <i class='fas fa-rotate-left'></i>
+      </button>
+    </div>
+    <!-- лейбл состояния под баром -->
+    <div class='ms-threshold-tooltip'>
+      <span class='ms-condition-label {{hpCondition system.HP "style"}}'>
+        {{localize (hpCondition system.HP "label")}}
+      </span>
+      <div class='ms-threshold-list'>
+        {{#hpBreakpoints system.HP}}
+          <div class='ms-threshold-item {{style}}'>
+            <span class='ms-threshold-val'>{{breakpoint}}</span>
+            <span>{{label}}</span>
+          </div>
+        {{/hpBreakpoints}}
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FP ================= -->
+  <div class='ms-resource ms-fp' data-gurps-resource="FP">
+    <!-- ряд: бейдж + минус + бар + плюс + ресет -->
+    <div class='ms-resource-row'>
+      {{#if system.conditions.exhausted}}
+        <span class='ms-condition-badge'
+              title='{{localize "GURPS.FP.tired"}}'>T</span>
+      {{/if}}
+      <button type="button"
+              class="ms-resource-btn ms-resource-btn-dec"
+              data-operation="resource-dec"
+              title="-1 FP">−</button>
+      <div class='ms-resource-display'
+           data-edit-target='fp'
+           title='{{localize "GURPS.attributesFPNAME"}}'>
+        <div class='ms-resource-bar'>
+          <div class='ms-resource-fill'
+               style='width: {{percent system.FP.value system.FP.max}}%;'>
+          </div>
+        </div>
+        <span class='ms-resource-text'>
+          {{system.FP.value}}/{{system.FP.max}}
+        </span>
+      </div>
+      <div class='ms-resource-edit'>
+        <input type='number' name='system.FP.value' value='{{system.FP.value}}' class='ms-resource-input'/>
+        <span class='ms-resource-separator'>/</span>
+        <input type='number' name='system.FP.max' value='{{system.FP.max}}' class='ms-resource-input'/>
+      </div>
+      <button type="button"
+              class="ms-resource-btn ms-resource-btn-inc"
+              data-operation="resource-inc"
+              title="+1 FP">+</button>
+      <button type='button'
+              class='ms-resource-reset'
+              data-action='reset-fp'
+              title='Reset to max'>
+        <i class='fas fa-rotate-left'></i>
+      </button>
+    </div>
+    <!-- лейбл состояния под баром -->
+    <div class='ms-threshold-tooltip'>
+      <span class='ms-condition-label {{fpCondition system.FP "style"}}'>
+        {{localize (fpCondition system.FP "label")}}
+      </span>
+      <div class='ms-threshold-list'>
+        {{#fpBreakpoints system.FP}}
+          <div class='ms-threshold-item {{style}}'>
+            <span class='ms-threshold-val'>{{breakpoint}}</span>
+            <span>{{label}}</span>
+          </div>
+        {{/fpBreakpoints}}
+      </div>
+    </div>
+  </div>
+</div>

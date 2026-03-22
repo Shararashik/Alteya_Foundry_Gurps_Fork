@@ -1,0 +1,29 @@
+<div id='identity'>
+  <div class='header'>{{localize 'GURPS.sheet.personal.identity'}}</div>
+  <div class='fieldblock'>
+    <div class='label'>{{localize 'GURPS.sheet.personal.name'}}:</div>
+    <div class='field'><input
+        name='name'
+        class='gcs-input'
+        type='text'
+        value='{{actor.name}}'
+        {{disabled (not isEditing)}}
+      /></div>
+    <div class='label'>{{localize 'GURPS.sheet.personal.title'}}:</div>
+    <div class='field'><input
+        name='system.traits.title'
+        class='gcs-input'
+        type='text'
+        value='{{system.traits.title}}'
+        {{disabled (not isEditing)}}
+      /></div>
+    <div class='label'>{{localize 'GURPS.sheet.personal.player'}}:</div>
+    <div class='field'><input
+        name='system.traits.player'
+        class='gcs-input'
+        type='text'
+        value='{{system.traits.player}}'
+        {{disabled (not isEditing)}}
+      /></div>
+  </div>
+</div>
