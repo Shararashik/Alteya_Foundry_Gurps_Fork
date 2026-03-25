@@ -1,0 +1,178 @@
+<!-- File: modules/gurps-instant-defaults/templates/hiking2.html -->
+
+<style>
+  .callheader {
+    background-color: black;
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 0.375rem;
+    font-size: 18px;
+  }
+
+  .colunah {
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    margin: 1px;
+  }
+
+  .button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3b3b3b;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 300ms;
+    width: 185px;
+  }
+
+  .button-28:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+
+  .butpai {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .colpai {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .coluna1 {
+    width: 49%;
+    text-align: left;
+  }
+
+  p#coluna {
+    margin: 1px 0;
+    height: 22px;
+  }
+
+  #mostra {
+    background: rgba(231, 231, 231, 0.555);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+  #diferente {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #1a1a1a;
+    padding: 5px;
+  }
+</style>
+
+<div class="callheader">Hiking Calculator</div>
+
+<div class="colpai">
+  <div class="colunah">Terrain</div>
+  <div class="colunah">Weather</div>
+</div>
+
+<div class="colpai">
+  <div class="coluna1">
+    <p id="coluna"><input type="radio" name="terrain" value="0.2"> Very Bad</p>
+    <p id="coluna"><input type="radio" name="terrain" value="0.5"> Bad</p>
+    <p id="coluna"><input type="radio" name="terrain" value="1"> Average</p>
+    <p id="coluna"><input type="radio" name="terrain" value="1.25"> Good</p>
+  </div>
+  <div class="coluna1">
+    <p id="coluna"><input type="radio" name="weather" value="6"> Normal</p>
+    <p id="coluna"><input type="radio" name="weather" value="3"> Rain</p>
+    <p id="coluna"><input type="radio" name="weather" value="4"> Ankle-deep Snow</p>
+    <p id="coluna"><input type="radio" name="weather" value="5"> Heavy Snow</p>
+  </div>
+</div>
+
+<div style="margin-top: 10px;">
+  <label><b>Walking Hours:</b></label>
+  <input id="hours" type="text" placeholder="e.g. 4">
+</div>
+
+<div id="mostra">
+  <b style="font-size: 16px;">Instructions</b><br>
+  Select tokens, pick terrain and weather, enter walking hours and press "Result".
+</div>
+
+<div class="butpai">
+  <button class="button-28" id="roll">Roll</button>
+  <button class="button-28" id="result">Result</button>
+</div>
+
+<script>
+  const mostra = document.getElementById("mostra");
+
+  document.getElementById("roll").addEventListener("click", () => {
+    GURPS.executeOTF('/roll ["Hiking" /r [S:Hiking | HT-5]]');
+  });
+
+  document.getElementById("result").addEventListener("click", () => {
+    const tokens = canvas.tokens.controlled;
+    if (!tokens.length) return ui.notifications.warn("Select at least one token.");
+
+    const hours = Number(document.getElementById("hours").value || 0);
+    if (!hours) return ui.notifications.warn("Enter walking hours.");
+
+    const moves = tokens.map(t => t.actor.system.basicmove.value);
+    const minMove = Math.min(...moves);
+
+    const terrainMod = Number(document.querySelector('input[name="terrain"]:checked')?.value || 1);
+    const weatherVal = Number(document.querySelector('input[name="weather"]:checked')?.value || 6);
+
+    let weatherMod = 1;
+    if (weatherVal === 3 || weatherVal === 4) weatherMod = 0.5;
+    if (weatherVal === 5) weatherMod = 0.25;
+
+    const base = Math.floor(minMove * hours * 0.8);
+    const success = Math.floor(base * 1.2);
+
+    const final = Math.floor(base * terrainMod * weatherMod);
+    const finalSuccess = Math.floor(success * terrainMod * weatherMod);
+
+    const token = tokens[0];
+    const actor = game.actors.get(token.actor.id);
+    const rollData = GURPS.lastTargetedRolls?.[actor.id];
+    const margin = rollData?.margin ?? -1;
+
+    if (margin < 0) {
+      mostra.innerHTML = `<p id="diferente">FAILED</p> Walked <b>${final}</b> miles in <b>${hours}</b> hours.`;
+    } else {
+      mostra.innerHTML = `<p id="diferente">SUCCESS</p> Walked <b>${finalSuccess}</b> miles in <b>${hours}</b> hours.`;
+    }
+  });
+</script>

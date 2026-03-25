@@ -1,0 +1,298 @@
+<style>
+  p:nth-of-type(2n + 1) {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 22px;
+    margin: 0px;
+  }
+
+  p:nth-of-type(2n + 2) {
+    background-color: rgba(255, 255, 255, 0.276);
+    height: 22px;
+    margin: 1px;
+  }
+
+  .colpai {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .colunah {
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    margin: 1px;
+  }
+
+  .coluna1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1px;
+  }
+
+  .coluna2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1px;
+  }
+
+  .coluna3 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1px;
+  }
+
+  .option {
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .optionc {
+    height: 20px;
+    text-align: left;
+    vertical-align: right;
+    padding-left: 20px;
+  }
+
+  input[type="radio"] {
+    vertical-align: left;
+  }
+
+  .spaceblack {
+    background-color: rgba(89, 88, 88, 0.667);
+    height: 5px;
+    width: auto;
+  }
+
+  .butpai {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 5px;
+  }
+
+  .butpai button {
+    flex: 1;
+  }
+
+  div#res {
+    background-image: url("systems/gurps/icons/hex2.webp");
+    height: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(80, 83, 83, 0.384);
+    border-radius: 18px;
+    border-top: 5px solid rgb(0, 0, 0);
+    background-color: rgba(231, 231, 231, 0.555);
+    font-size: 14px;
+  }
+</style>
+
+<div class="callheader">First Aid Calculator</div>
+<div class="colpai">
+  <div class="colunah">Tech Level</div>
+  <div class="colunah">Time</div>
+  <div class="colunah">HP Restored</div>
+</div>
+<div class="colpai">
+  <div class="coluna1">
+    <form style="text-align: left">
+      <p class="optionc">
+        <input type="radio" name="OPCAO" value="-4" checked /> 0-1
+      </p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="-3" /> 2-3</p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="-2" /> 4</p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="-2" /> 5</p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="-1" /> 6-7</p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="+0" /> 8</p>
+      <p class="optionc"><input type="radio" name="OPCAO" value="+1" /> 9</p>
+    </form>
+  </div>
+  <div class="coluna2">
+    <p class="option">30 minutes</p>
+    <p class="option">30 minutes</p>
+    <p class="option">30 minutes</p>
+    <p class="option">20 minutes</p>
+    <p class="option">20 minutes</p>
+    <p class="option">10 minutes</p>
+    <p class="option">10 minutes</p>
+  </div>
+  <div class="coluna2">
+    <form>
+      <p class="option">1d6-4</p>
+      <p class="option">1d6-3</p>
+      <p class="option">1d6-2</p>
+      <p class="option">1d6-2</p>
+      <p class="option">1d6-1</p>
+      <p class="option">1d6</p>
+      <p class="option">1d6+1</p>
+    </form>
+  </div>
+</div>
+<div class="spaceblack"></div>
+
+<div class="coluna3">
+  <form>
+    <div class="form-group">
+      <label style="text-align: left"><b>Physiology:</b> </label>
+      <select id="phisiology" name="phisiology">
+        <option value="[+0 Same specie]">Same specie</option>
+        <option value="[-2 Similar physiology]">Similar physiology</option>
+        <option value="[-5 Very different physiology]">Very different</option>
+        <option value="[-6 Utterly alien]">Utterly Alien</option>
+        <option value="[+0 bip bop buuuump error!]">Machines</option>
+      </select>
+    </div>
+  </form>
+  <form>
+    <div class="form-group">
+      <label style="text-align: left"><b>Equipments:</b> </label>
+      <select id="gear" name="gear">
+        <option value="[+1 First aid kit]">First Aid Kit</option>
+        <option value="[-2 No First Aid Kit]">Without Kit</option>
+        <option value="[+2 Crash kit]">Crash Kit</option>
+        <option value="[+2 Better First Aid Kit]">Better First Aid Kit</option>
+        <option value="[-2 Improvised Item]">Improvised Item</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+<div id="res">
+  Make a skill roll to bandage a wound, treat shock, give CPR, save someone from
+  choking, etc. Unusual problems must be identified using
+  <span
+    class="gurpslink"
+    onclick="GURPS.executeOTF('/r [S:Diagnosis/TL | IQ-6 | S:First*Aid-8 | S:Physician-4 | S:Veterinary-5]]')"
+    >Diagnosis</span
+  >
+  skill first.
+</div>
+
+<div class="butpai">
+  <button class="button-28" role="button" onclick="skill()">Skill</button>
+  <button class="button-28" role="button" onclick="healSelf()">Heal</button>
+  <button class="button-28" role="button" onclick="healTarget()">Heal Target</button>
+</div>
+
+<script>
+  function getHealAmount() {
+    var radios = document.getElementsByName("OPCAO");
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        let d6 = Math.floor(Math.random() * 6) + 1;
+        let mod = Number(radios[i].value);
+        let result = d6 + mod;
+        return result < 1 ? 1 : result;
+      }
+    }
+    return 1;
+  }
+
+  function skill() {
+    let tokenD = canvas.tokens.controlled[0];
+    if (!tokenD) { ui.notifications.warn("Select your token first!"); return; }
+    var gear = $("#gear").val();
+    var phisiology = $("#phisiology").val();
+    GURPS.executeOTF(`/sendmb ${tokenD.name} ${gear}${phisiology}`);
+    ChatMessage.create({
+      content: `${tokenD.name} click here ["First Aid/TL" /r [S:First*Aid/TL | IQ-4 | S:Esoteric*Medicine | S:Physician | S:Veterinary-4]] to make your check!`,
+    });
+  }
+
+  function healSelf() {
+    let tokenD = canvas.tokens.controlled[0];
+    if (!tokenD) { ui.notifications.warn("Select your token first!"); return; }
+    let resultado = getHealAmount();
+    let actor = tokenD.actor;
+    let hpBefore = actor.system.HP.value;
+    let hpAfter = hpBefore + resultado;
+
+    GURPS.executeOTF(`/r [/hp +${resultado}]`);
+
+    document.getElementById("res").innerHTML =
+      `You healed <b>${tokenD.name}</b> for <b>${resultado} HP</b>. Now they have <b>${hpAfter} HP</b>. You can use Medicine to help better tomorrow!`;
+
+    ChatMessage.create({
+      content: `<b>First Aid:</b> ${tokenD.name} was healed for <b>${resultado} HP</b> (${hpBefore} → ${hpAfter} HP).`,
+    });
+  }
+
+  function healTarget() {
+    let targets = game.user.targets;
+    if (!targets || targets.size === 0) {
+      ui.notifications.warn("Target a token first (click the target icon on a token)!");
+      return;
+    }
+    let healer = canvas.tokens.controlled[0];
+    if (!healer) { ui.notifications.warn("Select your token first!"); return; }
+
+    let resultado = getHealAmount();
+
+    targets.forEach((targetToken) => {
+      let hpBefore = targetToken.actor.system.HP.value;
+      let hpAfter = hpBefore + resultado;
+
+      document.getElementById("res").innerHTML =
+        `<b>${healer.name}</b> wants to heal <b>${targetToken.name}</b> for <b>${resultado} HP</b>. Waiting for GM to apply...`;
+
+      ChatMessage.create({
+        content: `
+          <b>First Aid:</b> ${healer.name} treated ${targetToken.name}.<br>
+          Healing amount: <b>${resultado} HP</b> (${hpBefore} → ${hpAfter} HP).<br>
+          <hr>
+          <button data-action="applyHeal"
+                  data-amount="${resultado}"
+                  data-target-id="${targetToken.id}"
+                  data-healer="${healer.name}"
+                  data-target-name="${targetToken.name}">
+            ✅ Apply Heal (GM)
+          </button>
+        `,
+      });
+    });
+  }
+
+  // Handle Apply button click in chat
+  Hooks.on('renderChatMessage', (message, html) => {
+    const btn = html.find('[data-action="applyHeal"]')[0];
+    if (!btn) return;
+
+    $(btn).on('click', async (event) => {
+      const b = event.currentTarget;
+      const amount = b.dataset.amount;
+      const targetId = b.dataset.targetId;
+      const healerName = b.dataset.healer;
+      const targetName = b.dataset.targetName;
+
+      const targetToken = canvas.tokens.get(targetId);
+      if (!targetToken) { ui.notifications.warn("Target token not found on canvas!"); return; }
+
+      GURPS.SetLastActor(targetToken.actor);
+      await ui.chat.processMessage(`/hp +${amount}`);
+
+      b.disabled = true;
+      b.textContent = `✅ Applied!`;
+
+      ChatMessage.create({
+        content: `<b>GM applied:</b> ${healerName} healed ${targetName} for <b>${amount} HP</b>.`,
+      });
+    });
+  });
+</script>
