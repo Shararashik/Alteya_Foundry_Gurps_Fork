@@ -168,7 +168,24 @@ export function bindSecondaryStatsEdit(html, actor) {
         setTimeout(() => {
             if (!fieldset.contains(document.activeElement)) {
                 fieldset.classList.remove(editingClass);
-                const fieldPath = input.name;
+                
+				const fieldPath = input.name;
+				
+				if (fieldPath === 'system.thrust' || fieldPath === 'system.swing') {
+				  // Content for these fields must be in the format xd+/-y, such as 2d+1 or 3d-2. Validate this before updating
+				  // the actor.
+				  const regex = /^\d+d([+-]\d+)?$/
+				  if (!regex.test(input.value.trim())) {
+					// If the input doesn't match the expected format, reset it to the current value and exit without updating
+					// the actor.
+					input.value = String(foundry.utils.getProperty(actor, fieldPath) ?? '')
+					return
+				  }
+
+				  actor.update({ [fieldPath]: input.value.trim() })
+				  return
+				}
+				
                 const newValue = parseFloat(input.value);
                 const currentValue = foundry.utils.getProperty(actor, fieldPath);
                 if (!isNaN(newValue) && newValue !== currentValue) {

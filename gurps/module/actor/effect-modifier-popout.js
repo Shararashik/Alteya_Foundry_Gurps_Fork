@@ -236,22 +236,25 @@ export class EffectModifierPopout extends Application {
         await this.render(false);
     }
     /** @override */
-    activateListeners(html) {
-        super.activateListeners(html);
-        GurpsWiring.hookupGurps(html);
-        html.find('a.gurpslink').on('contextmenu', ev => this.onRightClick(ev));
-        html.find('.gurpslink').on('contextmenu', ev => this.onRightClick(ev));
-        html.find('.glinkmod').on('contextmenu', ev => this.onRightClick(ev));
-        html.find('.glinkmodplus').on('contextmenu', ev => this.onRightClick(ev));
-        html.find('.glinkmodminus').on('contextmenu', ev => this.onRightClick(ev));
-        html.find('.gmod').on('contextmenu', ev => this.onRightClick(ev));
-        html.closest('div.effect-modifiers-app').on('drop', ev => this.handleDrop(ev));
-        html.find('.modifier-list').on('drop', ev => this.handleDrop(ev));
-        html
-            .closest('div.effect-modifiers-app')
-            .find('.window-title')
-            .text(game.i18n.localize('GURPS.effectModifierPopout'));
-    }
+  activateListeners(html) {
+    super.activateListeners(html)
+
+    GurpsWiring.hookupClickEvents(html)
+
+    html.find('a.gurpslink').on('contextmenu', ev => this.onRightClick(ev))
+    html.find('.gurpslink').on('contextmenu', ev => this.onRightClick(ev))
+    html.find('.glinkmod').on('contextmenu', ev => this.onRightClick(ev))
+    html.find('.glinkmodplus').on('contextmenu', ev => this.onRightClick(ev))
+    html.find('.glinkmodminus').on('contextmenu', ev => this.onRightClick(ev))
+    html.find('.gmod').on('contextmenu', ev => this.onRightClick(ev))
+
+    html.closest('div.effect-modifiers-app').on('drop', ev => this.handleDrop(ev))
+    html.find('.modifier-list').on('drop', ev => this.handleDrop(ev))
+    html
+      .closest('div.effect-modifiers-app')
+      .find('.window-title')
+      .text(game.i18n.localize('GURPS.effectModifierPopout'))
+  }
     _getHeaderButtons() {
         let buttons = super._getHeaderButtons();
         buttons.unshift({
