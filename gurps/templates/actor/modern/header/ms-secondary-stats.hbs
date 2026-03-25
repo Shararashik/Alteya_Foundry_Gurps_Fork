@@ -67,7 +67,7 @@
              name='system.touch' value='{{system.touch}}'/>
     </div>
     <div class='ms-stat'>
-      <span class='ms-stat-label ms-frightcheck-label' style='cursor:pointer;' title='Open Fright Check'>{{localize 'GURPS.frightcheck'}}</span>
+      <span class='ms-stat-label ms-frightcheck-label' style='cursor:pointer; text-decoration:underline; transition:color 0.2s;' onmouseover="this.style.color='#c9a227'" onmouseout="this.style.color=''" title='Open Fright Check'>{{localize 'GURPS.frightcheck'}}</span>
       {{>dice-button otf='Fright Check' level=system.frightcheck}}
       <input class='ms-stat-input' type='number' step='1'
              name='system.frightcheck' value='{{system.frightcheck}}'/>

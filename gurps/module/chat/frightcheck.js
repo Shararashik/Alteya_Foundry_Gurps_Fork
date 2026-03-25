@@ -6,9 +6,7 @@ export class FrightCheckChatProcessor extends ChatProcessor {
     help() {
         return '/frightcheck (or /fc)';
     }
-    isGMOnly() {
-        return true;
-    }
+
     matches(line) {
         this.match = line.match(/^\/(fc|frightcheck)/);
         return !!this.match;
@@ -61,7 +59,7 @@ export class FrightCheckChatProcessor extends ChatProcessor {
             daredevil: actor.findAdvantage(game.i18n.localize('GURPS.traits.daredevil')) || null,
         };
         // TODO reskin frightcheck UI
-        new foundry.applications.api.DialogV2({
+        const dialog = new foundry.applications.api.DialogV2({
             window: { title: 'Fright Check' },
             content: await renderTemplate('systems/gurps/templates/frightcheck-macro.hbs', data),
             buttons: [
@@ -80,7 +78,32 @@ export class FrightCheckChatProcessor extends ChatProcessor {
                     label: 'Close',
                 },
             ],
-        }, { width: 650 }).render(true);
+        }, { width: 650 });
+        await dialog.render(true);
+        // Apply styles after render
+        const el = dialog.element;
+        if (el) {
+            el.querySelectorAll('.fright-check label, .fright-check div, .fright-check span').forEach(e => e.style.color = '#d4c5a9');
+            el.querySelectorAll('.fright-check h4').forEach(e => {
+                e.style.color = '#c09a48';
+                e.style.background = '#2a1a1a';
+                e.style.border = '1px solid #5a3a1a';
+                e.style.borderRadius = '4px';
+                e.style.padding = '4px 10px';
+                e.style.textTransform = 'uppercase';
+                e.style.letterSpacing = '1px';
+            });
+            el.querySelectorAll('.fright-check select').forEach(e => {
+                e.style.background = '#2a2a3e';
+                e.style.color = '#d4c5a9';
+                e.style.border = '1px solid #5a3a1a';
+            });
+            el.querySelectorAll('.fright-check input[type="number"], .fright-check input[type="text"]').forEach(e => {
+                e.style.background = '#2a2a3e';
+                e.style.color = '#d4c5a9';
+                e.style.border = '1px solid #5a3a1a';
+            });
+        }
     }
     getCombatModifier(actor) {
         const combatReflexes = actor.findAdvantage(game.i18n.localize('GURPS.traits.combatReflexes'));

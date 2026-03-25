@@ -96,7 +96,7 @@ export class GurpsActorModernSheet extends GurpsActorSheet {
         html.find('.ms-frightcheck-label').on('click', (event) => {
             event.preventDefault();
             GURPS.SetLastActor(this.actor);
-            GURPS.chatProcessors.process('/fc');
+            ui.chat.processMessage('/fc');
         });
         bindSectionCollapse(html, {
             headerSelector: '.ms-section-header.ms-collapsible',
