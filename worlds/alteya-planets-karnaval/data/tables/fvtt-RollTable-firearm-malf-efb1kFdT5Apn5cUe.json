@@ -1,0 +1,102 @@
+{
+  "name": "Firearm Malf",
+  "img": "systems/gurps/icons/single-die.webp",
+  "results": [
+    {
+      "_id": "pETe9Y4yjnTQ39y3",
+      "type": "text",
+      "text": "Mechanical or Electrical Problem. The weapon fails to fire. A successful Armoury or IQ-based weapon skill roll (takes a Ready maneuver) can diagnose the problem. Once the problem is known, make an Armoury skill roll to correct it. Each repair attempt takes one hour, and any critical failure destroys the weapon. Grenades: This represents a fusing problem: the weapon detonates [[/r 1d6]] seconds late.",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ITNuMUmOImGAjbVc",
+      "type": "text",
+      "text": "Misfire. The weapon fails to fire. A successful Armory+2 or IQ-based weapon skill roll (takes a Ready maneuver) can identify the problem. If the weapon is a revolver, the next shot will fire normally. Otherwise, each attempt to fix the problem requires three Ready maneuvers, two hands free, and a successful Armoury+2 or IQ-based weapon skill roll. Critical failure causes a mechanical or electrical problem. Grenades: The grenade is a dud, and will never explode.",
+      "weight": 1,
+      "range": [
+        5,
+        8
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "5m2PZbXBPUuflvmx",
+      "type": "text",
+      "text": "Stoppage. The weapon fires one shot, then jams or otherwise stops working. (Treat the fired shot as a normal attack.) Each attempt to clear the stoppage requires three Ready maneuvers, two hands free, and a successful Armoury roll, or IQ-based weapon skill roll at -4. A success fixes the weapon. Failure means it isn’t fixed yet, but you can try again. Critical failure causes a mechanical or electrical problem. Beam weapons: Treat as a mechanical or electrical problem. Grenades and other single-use weapons: The weapon is a dud; it will never fire or explode.",
+      "weight": 1,
+      "range": [
+        9,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "2bk1YTGIDHaD23Lc",
+      "type": "text",
+      "text": "Misfire. The weapon fails to fire. A successful Armory+2 or IQ-based weapon skill roll (takes a Ready maneuver) can identify the problem. If the weapon is a revolver, the next shot will fire normally. Otherwise, each attempt to fix the problem requires three Ready maneuvers, two hands free, and a successful Armoury+2 or IQ-based weapon skill roll. Critical failure causes a mechanical or electrical problem. Grenades: The grenade is a dud, and will never explode.",
+      "weight": 1,
+      "range": [
+        12,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "mPzByFhTwLyKl2Wd",
+      "type": "text",
+      "text": "Mechanical or electrical problem, and possible explosion. The weapon fails to fire. A successful Armoury or IQ-based weapon skill roll (takes a Ready maneuver) can diagnose the problem. Once the problem is known, make an Armoury skill roll to correct it. Each repair attempt takes one hour, and any critical failure destroys the weapon. Grenades: This represents a fusing problem: the weapon detonates [[/r 1d6]] seconds late. Any TL3 firearm or TL4 grenade, breechloader, or repeating firearm may blow up in the gunner’s face, inflicting 1d+2 cr ex [2d]. If the weapon uses an explosive warhead, use the warhead’s damage instead. TL5+ weapons do not explode – treat as a mechanical or electrical problem.",
+      "weight": 1,
+      "range": [
+        15,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "aersalus-d1-team",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.18"
+    }
+  },
+  "description": "",
+  "_stats": {
+    "systemId": null,
+    "systemVersion": null,
+    "coreVersion": "12.330",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,522 @@
+{
+  "name": "Fright Check",
+  "img": "systems/gurps/icons/single-die.webp",
+  "description": "Fright Check",
+  "results": [
+    {
+      "_id": "NWW5m0fiSaTPw47h",
+      "type": 0,
+      "text": "Stunned for one second, then recover automatically",
+      "weight": 1,
+      "range": [
+        4,
+        5
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "5ut8n7lfdoWWA0vP",
+      "type": 0,
+      "text": "Stunned for one second. Every second after that, roll vs. unmodified Will to snap out of it.",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "UJbhzs0f4uM2hXQD",
+      "type": 0,
+      "text": "Stunned for one second. Every second after that, roll vs. Will, plus whatever bonuses or penalties you had on your original roll, to snap out of it.",
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "kmNqNlaIqp9aLnqh",
+      "type": 0,
+      "text": "Stunned for [/r 1d6] seconds. Every second after that, roll vs. modified Will, as above, to snap out of it.",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "iEEuxqZc7qpqwFZK",
+      "type": 0,
+      "text": "Stunned for [/r 2d6] seconds. Every second after that, roll vs. modified Will, as above, to snap out of it.",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ckWyKyMlJH7AT6Bc",
+      "type": 0,
+      "text": "Lose your lunch. Treat this as retching for (25 - HT) seconds, and then roll vs. HT each second to recover; see Incapacitating Conditions (PDF:B428). Depending on the circumstances, this may be merely inconvenient, or humiliating.",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ADkQo6CViRV7K3z7",
+      "type": 0,
+      "text": "Acquire a new mental quirk (see Quirks, [PDF:B162]). This is the only way to acquire more than five quirks.",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "CZ3eN2oUdG3MuAi1",
+      "type": 0,
+      "text": "Lose [/r 1d6] FP, and take [/r 1d6] seconds of stunning as per 10.",
+      "weight": 1,
+      "range": [
+        14,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Pvbcy0p9mNSmK9kD",
+      "type": 0,
+      "text": "Stunned for [/r 1d6] seconds, as per 10, and acquire a new quirk, as per 13.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "VewUg6SLpFnYPgRA",
+      "type": 0,
+      "text": "Faint for [/r 1d6] minutes, then roll vs. HT each minute to recover.",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Cw2Cys9XSTuKek5o",
+      "type": 0,
+      "text": "Faint as above, and roll vs. HT immediately. On a failed roll, take 1 HP of injury as you collapse.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "hL1F1zBpve1D0dv6",
+      "type": 0,
+      "text": "Severe faint, lasting for [/r 2d6] minutes. Roll vs. HT each minute to recover. Take 1 HP of injury.",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "n2Zv5LbMlZazeDfr",
+      "type": 0,
+      "text": "Faint bordering on shock, lasting for [/r 4d6] minutes. Also, lose [/r 1d6] FP.",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "oCfd9fASLcFJGAPb",
+      "type": 0,
+      "text": "Panic. You run around screaming, sit down and cry, or do something else equally pointless for 1d minutes. At the end of that time, roll vs. unmodified Will once per minute to snap out of it.",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ndlJYkqSd98Esh51",
+      "type": 0,
+      "text": "Acquire a -10-point Delusion [PDF:B130].",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "D8OS3jKjTTJW5GOj",
+      "type": 0,
+      "text": "Acquire a -10-point Phobia [PDF:B148] or other -10-point mental disadvantage.",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "88NwvaxP7PTyFAy6",
+      "type": 0,
+      "text": "Major physical effect, set by GM: hair turns white, age five years overnight, go partially deaf, etc. In game terms, acquire -15 points worth of physical disadvantages (for this purpose, each year of age counts as -3 points).",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "UKqZUtAC4BfjSXZC",
+      "type": 0,
+      "text": "If you already have a Phobia or other mental disadvantage that is logically related to the frightening incident, your self-control number becomes one step worse. If not, or if your self-control number is already 6, add a new -10-point Phobia or other -10-point mental disadvantage.",
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "1NFJhAuxulY4hbdi",
+      "type": 0,
+      "text": "Faint for [/r 1d6] minutes, as per 18, and acquire a new -10-point Delusion, as per 22.",
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "dT0QCsFVzcDRt9qJ",
+      "type": 0,
+      "text": "Faint for [/r 1d6] minutes, as per 18, and acquire a new -10-point mental disadvantage, as per 23.",
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "w1sXka9dIX5ON6kS",
+      "type": 0,
+      "text": "Light coma. You fall unconscious, rolling vs. HT every 30 minutes to recover. For 6 hours after you come to, all skill rolls and attribute checks are at -2.",
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "3D3QShX5hLz7S93c",
+      "type": 0,
+      "text": "Coma. As above, but you are unconscious for [/r 1d6] hours. Then roll vs. HT. If the roll fails, remain in a coma for another [/r 1d6] hours, and so on.",
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "mXQFErGpqeiatyUK",
+      "type": 0,
+      "text": "Catatonia. Stare into space for [/r 1d6] days. Then roll vs. HT. On a failed roll, remain catatonic for another 1d days, and so on. If you have no medical care, lose 1 HP the first day, 2 the second, and so on. If you survive and awaken, all skill rolls and attribute checks are at -2 for as many days as the catatonia lasted.",
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Wd5EwCDW7cF9FN0C",
+      "type": 0,
+      "text": "Seizure. You lose control of your body and fall to the ground in a fit lasting 1d minutes and costing 1d FP. Also, roll vs. HT. On a failure, take 1d of injury. On a critical failure, you also lose 1 HT permanently.",
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "jq3IT21P9ZkJfUuu",
+      "type": 0,
+      "text": "Stricken. You fall to the ground, taking [/r 2d6] of injury in the form of a mild heart attack or stroke.",
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "GxhEmnW0M0k9D6qp",
+      "type": 0,
+      "text": "Total panic. You are out of control; you might do anything (the GM rolls [/r 3d6]: the higher the roll, the more useless your reaction). For instance, you might jump off a cliff to avoid the monster. If you survive your first reaction, roll vs. Will to come out of the panic. If you fail, the GM rolls for another panic reaction, and so on!",
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "N1vhonGCziOWMcIS",
+      "type": 0,
+      "text": "Acquire a -15-point Delusion [PDF:B130].",
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "NBI5Ou0RiWs3Wiwm",
+      "type": 0,
+      "text": "Acquire a -15-point Phobia [PDF:B148] or other mental disadvantage worth -15 points.",
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "dko1M4W5GoMSNIL0",
+      "type": 0,
+      "text": "Severe physical effect, as per 24, but equivalent to -20 points of physical disadvantages.",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "0dKC4EKO40vnrGWQ",
+      "type": 0,
+      "text": "Severe physical effect, as per 24, but equivalent to -30 points of physical disadvantages.",
+      "weight": 1,
+      "range": [
+        37,
+        37
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "wj5RQwCqmt49vPjk",
+      "type": 0,
+      "text": "Coma, as per 29, and a -15-point Delusion, as per 34.",
+      "weight": 1,
+      "range": [
+        38,
+        38
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "6Rfp7sIFruw9Q4r5",
+      "type": 0,
+      "text": "Coma, as per 29, and a -15-point Phobia or other -15-point mental disadvantage, as per 35.",
+      "weight": 1,
+      "range": [
+        39,
+        39
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "cYasaV24A7wDGN6g",
+      "type": 0,
+      "text": "As 39, above, but victim also loses 1 point of IQ permanently. This automatically reduces all IQbased skills, including magic spells, by 1.",
+      "weight": 1,
+      "range": [
+        40,
+        999
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "_stats": {
+    "systemId": null,
+    "systemVersion": null,
+    "coreVersion": null,
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

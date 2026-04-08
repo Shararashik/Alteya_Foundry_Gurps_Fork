@@ -1,0 +1,223 @@
+{
+  "name": "Critical Miss (Unarmed)",
+  "img": "systems/gurps/icons/single-die-small.webp",
+  "description": "",
+  "results": [
+    {
+      "text": "Knock yourself out. Roll vs HT per 30 min to recover",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "_id": "iM7iLnDbDxYnUGWE",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d6-grey.svg"
+    },
+    {
+      "text": "Strain attacking limb; 1 HP dmg, crippled for 30 min. If biting, butting, etc, pulled muscle causes Moderate Pain for 20 - HT minutes",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "_id": "wkD4XHgE5uqbC0Ug",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Hit solid object; take cr thr damage. DR protects. If foe has imp, take weapon damage (your ST)",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "_id": "nDwoyhQAEoJvZR8b",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "As 5, half damage. If using natural weapons (teeth, etc), they break (-1 damage until heal)",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "_id": "5rj9EykQH4YDzXIe",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Stumble. On attack, 1 yd past opponent facing away. On parry, fall down as 8",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "_id": "cm2zlEVgiZA9oeGF",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Fall down",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "_id": "b0hq5nnM6QRN1sqT",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Lose balance; Do Nothing next turn; -2 active defenses",
+      "weight": 3,
+      "range": [
+        9,
+        11
+      ],
+      "_id": "r6epfSpiTZUGW3uJ",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Trip. DX roll to avoid falling down. -4 if kicking; double usual penalties for technique",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "_id": "jbyx2lwZP3hYTzya",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Drop guard. -2 active defenses, enemy Evaluate/Feint penalties count double",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "_id": "aDfS0nzLdbqj1eLq",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Stumble as per 7",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "_id": "OylMnpUuteXg2g5x",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Tear muscle. 1d-3 to limb. Off balance; -1 attacks and defenses next turn. -3 to use that limb (HPT -1)",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "_id": "E14BDA870o8cI4Sg",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Hit solid object; as 5",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "_id": "Ls1ZBtIa0Gc3BSc9",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Strain limb per 4. IQ 3-5 animal loses nerve; flees or surrenders",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "_id": "FMJzWhnJcRDWQRSo",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    },
+    {
+      "text": "Knock yourself out. Roll vs HT per 30 min to recover",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "_id": "sjs9hFzE1sbnbmdo",
+      "type": 0,
+      "documentId": null,
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "_stats": {
+    "systemId": "gurps",
+    "systemVersion": "0.16.10",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1714000915957,
+    "lastModifiedBy": "gv2MN52bwnCPf85O"
+  },
+  "formula": "1d18"
+}

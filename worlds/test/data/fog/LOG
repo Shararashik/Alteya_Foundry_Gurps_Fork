@@ -1,0 +1,8 @@
+2026/04/02-21:11:30.024 436c Recovering log #183
+2026/04/02-21:11:30.026 436c Delete type=0 #183
+2026/04/02-21:11:30.026 436c Delete type=3 #181
+2026/04/03-00:51:50.030 9090 Level-0 table #188: started
+2026/04/03-00:51:50.030 9090 Level-0 table #188: 0 bytes OK
+2026/04/03-00:51:50.030 9090 Delete type=0 #186
+2026/04/03-00:51:50.030 9090 Manual compaction at level-0 from '!fog!4TiisILHQjekWehN' @ 72057594037927935 : 1 .. '!fog!woeLchSaAv7IK1mB' @ 0 : 0; will stop at (end)
+2026/04/03-00:51:50.031 9090 Manual compaction at level-1 from '!fog!4TiisILHQjekWehN' @ 72057594037927935 : 1 .. '!fog!woeLchSaAv7IK1mB' @ 0 : 0; will stop at (end)

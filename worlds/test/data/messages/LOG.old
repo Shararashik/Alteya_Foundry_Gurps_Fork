@@ -1,0 +1,7 @@
+2026/04/02-21:02:08.066 94f0 Recovering log #179
+2026/04/02-21:02:08.070 94f0 Delete type=0 #179
+2026/04/02-21:02:08.070 94f0 Delete type=3 #177
+2026/04/02-21:08:47.642 9090 Level-0 table #185: started
+2026/04/02-21:08:47.642 9090 Level-0 table #185: 0 bytes OK
+2026/04/02-21:08:47.643 9090 Delete type=0 #183
+2026/04/02-21:08:47.646 9090 Manual compaction at level-0 from '!messages!1e9iF5fmbe09EODH' @ 72057594037927935 : 1 .. '!messages!zlOHkjayMtC9RKEb' @ 0 : 0; will stop at (end)

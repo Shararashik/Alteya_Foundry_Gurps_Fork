@@ -1,0 +1,237 @@
+{
+  "name": "Unarmed Critical Miss Table",
+  "img": "systems/gurps/icons/single-die.webp",
+  "results": [
+    {
+      "_id": "ovozAbKWSiqaJYmZ",
+      "type": 0,
+      "text": "You knock yourself out! Details are up to the GM - perhaps you trip and fall on your head, or walk face-first into an opponent's fist or shield. Roll vs. HT every 30 minutes to recover.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "OhH0mqYlQPVct2Iu",
+      "type": 0,
+      "text": "If attacking or parrying with a limb, you strain it: take 1 HP of injury and the limb is \"crippled.\" You cannot use it, either to attack or defend, for 30 minutes. If biting, butting, etc., you pull a muscle and suffer moderate pain (see [PDF:B28]) for the next (20 - HT) minutes, minimum one minute.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "VTF6zX5L1lWGsZC1",
+      "type": 0,
+      "text": "You hit a solid object (wall, floor, etc.) instead of striking your foe or parrying his attack. You take crushing damage equal to your thrusting damage to the body part you were using; DR protects normally. Exception: If attacking a foe armed with a ready impaling weapon, you fall on his weapon! You suffer the weapon's damage, but based on your ST rather than his.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "yJ7pWpcPxB9S1Kee",
+      "type": 0,
+      "text": "As 5, but half damage only. Exception: If attacking with natural weapons, such as claws or teeth, they break: -1 damage on future attacks until you heal (for recovery, [PDF:B422]).",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Nl9H7TlhUmNIFi7a",
+      "type": 0,
+      "text": "You stumble. On an attack, you advance one yard past your opponent and end your turn facing away from him; he is now behind you! On a parry, you fall down; see 8.",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "fwvj1cApaCuhw2Cw",
+      "type": 0,
+      "text": "You fall down!",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "nuG4PAaYfsncnovN",
+      "type": 0,
+      "text": "You lose your balance. You can do nothing else (not even a free action) until your next turn, and all your active defenses are at -2 until then.",
+      "weight": 1,
+      "range": [
+        9,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "76tKk68ZqbyOBGBa",
+      "type": 0,
+      "text": "You trip. Make a [DX] roll to avoid falling down. Roll at [DX-4] if kicking, or at twice the usual DX penalty for a technique that requires a DX roll to avoid mishap even on a normal failure (e.g., [DX-8] for a Jump Kick).",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "LSLVTkI6KhJFouYi",
+      "type": 0,
+      "text": "You drop your guard. All your active defenses are at -2 for the next turn, and any Evaluate bonus or Feint penalty against you until your next turn counts double! This is obvious to nearby opponents.",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "sbAePcq3YDWTX7Gt",
+      "type": 0,
+      "text": "You stumble. On an attack, you advance one yard past your opponent and end your turn facing away from him; he is now behind you! On a parry, you fall down; see 8.",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "eqUwemsiINkuvu40",
+      "type": 0,
+      "text": "You tear a muscle. Take [/r 1d6-3] of injury to the limb you used (to one limb, if you used two), or to your neck if biting, butting, etc. You are off balance and at -1 to all attacks and defenses for the next turn. You are at -3 to any action involving that limb (or to any action, if you injure your neck!) until this damage heals. Reduce this penalty to -1 if you have High Pain Threshold.",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "FKSPHOOhBwMr1otX",
+      "type": 0,
+      "text": "You hit a solid object (wall, floor, etc.) instead of striking your foe or parrying his attack. You take crushing damage equal to your thrusting damage to the body part you were using; DR protects normally. Exception: If attacking a foe armed with a ready impaling weapon, you fall on his weapon! You suffer the weapon's damage, but based on your ST rather than his.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "tlcoBWKHdT54EXIO",
+      "type": 0,
+      "text": "You strain a limb or pull a muscle, as in 4. Exception: An IQ 3-5 animal fails so miserably that it loses its nerve. It will turn and flee on its next turn, if possible. If backed into a corner, it will assume a surrender position (throat bared, belly exposed, etc.).",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "uvxgyV7eFATHnblv",
+      "type": 0,
+      "text": "You knock yourself out! Details are up to the GM - perhaps you trip and fall on your head, or walk face-first into an opponent's fist or shield. Roll vs. HT every 30 minutes to recover.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "description": "",
+  "_stats": {
+    "systemId": "gurps",
+    "systemVersion": "0.16.5",
+    "coreVersion": "11.308",
+    "createdTime": null,
+    "modifiedTime": 1694324871762,
+    "lastModifiedBy": "gv2MN52bwnCPf85O"
+  }
+}

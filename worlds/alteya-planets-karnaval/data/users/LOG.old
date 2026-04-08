@@ -1,0 +1,7 @@
+2026/04/02-21:08:53.172 436c Recovering log #924
+2026/04/02-21:08:53.175 436c Delete type=0 #924
+2026/04/02-21:08:53.176 436c Delete type=3 #922
+2026/04/02-21:11:24.320 9090 Level-0 table #929: started
+2026/04/02-21:11:24.320 9090 Level-0 table #929: 0 bytes OK
+2026/04/02-21:11:24.321 9090 Delete type=0 #927
+2026/04/02-21:11:24.335 9090 Manual compaction at level-0 from '!users!1YfZl8hvNGq4A2TW' @ 72057594037927935 : 1 .. '!users!TEtUmVTKcWtAGGm7' @ 0 : 0; will stop at (end)

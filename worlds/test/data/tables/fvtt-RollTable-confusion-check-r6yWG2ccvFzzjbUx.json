@@ -1,0 +1,390 @@
+{
+  "name": "Confusion Check",
+  "img": "systems/gurps/icons/single-die.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "pN1T24rwbZnmPzN0",
+      "type": "text",
+      "text": "Stunned for 1 second, then recover automatically",
+      "weight": 1,
+      "range": [
+        4,
+        5
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "nbMsEpcandZE8rz8",
+      "type": "text",
+      "text": "Stunned for one second. Every second after that, roll vs. unmodified Will to snap out of it",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "1bcoV0AqptkilUm6",
+      "type": "text",
+      "text": "Stunned for one second. Every second after that, roll vs. Will, plus whatever bonuses or penalties you had on your original roll, to snap out of it.",
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "kKi2Qg0KGmpyxm8X",
+      "type": "text",
+      "text": "Stunned for [[1d6]] seconds. Every second after that, roll vs. modified Will, as above, to snap out of it",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "6wkmgOcJJtGXFFo0",
+      "type": "text",
+      "text": "Stunned for [[2d6]] seconds. Every second after that, roll vs. modified Will, as above, to snap out of it.",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "larVULgsx8PBPjbw",
+      "type": "text",
+      "text": "Confusion causes (25 - IQ) seconds of daze; see Incapacitating Conditions (p. 428). Depending on the circumstances, this may be merely inconvenient, or humiliating.",
+      "weight": 1,
+      "range": [
+        12,
+        13
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "86k8UZdKISRHTO00",
+      "type": "text",
+      "text": "Acquire a new mental quirk. Confusion leads to quirks that suggest bafflement or perplexity.",
+      "weight": 1,
+      "range": [
+        14,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ZAW5OCbdYdTDHf15",
+      "type": "text",
+      "text": "Stunned for [[1d6]] seconds. Every second after that, roll vs. modified Will, as above, to snap out of it. And acquire a new mental quirk that suggest bafflement or perplexity (see Quirks, p. 162). This is the only way to acquire more than five quirks.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "lOQ6yxqxDldkAKPi",
+      "type": "text",
+      "text": "Confusion causes [[1d6]] minutes of hallucinating, then roll vs. Will each minute to recover.",
+      "weight": 1,
+      "range": [
+        17,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "UtxvVwWNatZKjTqS",
+      "type": "text",
+      "text": "Confusion causes [[2d6]] minutes of hallucinating, then roll vs. Will each minute to recover.",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "qgolt2Gm9Zm3dQv5",
+      "type": "text",
+      "text": "Confusion causes [[4d6]] minutes of hallucinating, then roll vs. Will each minute to recover.",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Oi9TjhPUBhk43etV",
+      "type": "text",
+      "text": "Confusion causes you to hallucinate (the GM specifies the details, which should fit the situation); you can try to act, but you’re out of touch with reality and at -5 on all success rolls. This lasts [[3d6]] minutes then roll vs. Will once per minute to snap out of it.",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "hOy2qf4bFGqR9D3I",
+      "type": "text",
+      "text": "Acquire a -10-point mental disadvantage. Confusion “blows your mind,” most likely resulting in one of Confused (12), Delusion (Major), Indecisive (12), or Short Attention Span (12).",
+      "weight": 1,
+      "range": [
+        22,
+        23
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "97pzR2kF7sjLJhmY",
+      "type": "text",
+      "text": "Acquire a -10-point mental disadvantage. Confusion “blows your mind,” most likely resulting in one of Confused (12), Delusion (Major), Indecisive (12), or Short Attention Span (12). If you already have a -5 to -10-point disadvantage that could result from Awe or Confusion, it worsens to a -15 trait.",
+      "weight": 1,
+      "range": [
+        24,
+        25
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "qyGgdLP23e3RECVt",
+      "type": "text",
+      "text": "Experience hallucinating for [[1d6]] minutes. Acquire a new -10-point mental disadvantage. Confusion “blows your mind,” most likely resulting in one of Confused (12), Delusion (Major), Indecisive (12), or Short Attention Span (12).",
+      "weight": 1,
+      "range": [
+        26,
+        27
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "7VjRYFjLTdjwkvuq",
+      "type": "text",
+      "text": "Experience hallucinating for [[2d6]] minutes. Acquire a new -10-point mental disadvantage. Confusion “blows your mind,” most likely resulting in one of Confused (12), Delusion (Major), Indecisive (12), or Short Attention Span (12).",
+      "weight": 1,
+      "range": [
+        28,
+        29
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "lszfhD2ofVJRoKQO",
+      "type": "text",
+      "text": "Experience hallucinating for [[4d6]] minutes. Acquire a new -10-point mental disadvantage. Confusion “blows your mind,” most likely resulting in one of Confused (12), Delusion (Major), Indecisive (12), or Short Attention Span (12).",
+      "weight": 1,
+      "range": [
+        30,
+        31
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "v71LKovYUxRZ6W5n",
+      "type": "text",
+      "text": "Confusion drives you completely mad. You might do anything! The GM rolls 3d – the higher the roll, the more dangerous the action. For instance, you might believe you can fly and leap to your doom. Should you survive your first reaction, roll vs. Will to recover. If you fail, the GM rolls for another insane action, and so on.",
+      "weight": 1,
+      "range": [
+        32,
+        33
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "9X3FhfNijZPujhRy",
+      "type": "text",
+      "text": "Acquire a -15-point mental disadvantage. Confusion tends to cause Confused (9), Delusion (Severe), Indecisive (9), On the Edge (12), or Short Attention Span (9).",
+      "weight": 1,
+      "range": [
+        34,
+        35
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "VyBuMqRiVNr9C0j4",
+      "type": "text",
+      "text": "Acquire a -20-point mental disadvantage. Confusion tends to cause Confused, Delusion, Indecisive, On the Edge, or Short Attention Span.",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "wvdN4k6pjZSee9Pu",
+      "type": "text",
+      "text": "Acquire a -30-point mental disadvantage. Confusion tends to cause Confused, Delusion, Indecisive, On the Edge, or Short Attention Span. To make up -30 points, the GM may have to select more than one trait.",
+      "weight": 1,
+      "range": [
+        37,
+        37
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "D7wONt66kmdoJT8D",
+      "type": "text",
+      "text": "Confusion causes [[1d6]] minutes of hallucinating, then roll vs. Will each minute to recover. Acquire a -15-point mental disadvantage. Confusion tends to cause Confused, Delusion, Indecisive, On the Edge, or Short Attention Span.",
+      "weight": 1,
+      "range": [
+        38,
+        38
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "EXcEtSYWayhsTp3C",
+      "type": "text",
+      "text": "Confusion causes [[2d6]] minutes of hallucinating, then roll vs. Will each minute to recover. Acquire a -15-point mental disadvantage. Confusion tends to cause Confused, Delusion, Indecisive, On the Edge, or Short Attention Span.",
+      "weight": 1,
+      "range": [
+        39,
+        39
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "UQGLMOmPiJ2hA0Tu",
+      "type": "text",
+      "text": "Confusion causes [[2d6]] minutes of hallucinating, then roll vs. Will each minute to recover. Acquire a -15-point mental disadvantage. Confusion tends to cause Confused, Delusion, Indecisive, On the Edge, or Short Attention Span. Permanently lose 1 point of IQ.",
+      "weight": 1,
+      "range": [
+        40,
+        100
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6 +@gmodc",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "core": {
+      "sourceId": "RollTable.YWbkHw7suQies1kP"
+    },
+    "exportSource": {
+      "world": "aersalus-d1-team",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.18"
+    }
+  },
+  "_stats": {
+    "systemId": null,
+    "systemVersion": null,
+    "coreVersion": "12.330",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

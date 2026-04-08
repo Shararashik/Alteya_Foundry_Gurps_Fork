@@ -1,0 +1,7 @@
+2026/04/02-21:02:08.073 8d40 Recovering log #158
+2026/04/02-21:02:08.075 8d40 Delete type=0 #158
+2026/04/02-21:02:08.075 8d40 Delete type=3 #156
+2026/04/02-21:08:47.640 9090 Level-0 table #164: started
+2026/04/02-21:08:47.640 9090 Level-0 table #164: 0 bytes OK
+2026/04/02-21:08:47.641 9090 Delete type=0 #162
+2026/04/02-21:08:47.642 9090 Manual compaction at level-0 from '!combats!AFB9hUKtuGbJmdBB' @ 72057594037927935 : 1 .. '!combats.combatants!AFB9hUKtuGbJmdBB.T129HuESK4kDXrZg' @ 0 : 0; will stop at (end)

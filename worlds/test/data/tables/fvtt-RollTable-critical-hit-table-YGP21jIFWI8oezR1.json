@@ -1,0 +1,222 @@
+{
+  "name": "Critical Hit Table",
+  "img": "systems/gurps/icons/single-die.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "rqbcXRdNUdp9m1YA",
+      "type": 0,
+      "text": "The blow does triple damage.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "DLfcAFJyTrgB83AI",
+      "type": 0,
+      "text": "The target's DR protects at half value (round down) after applying any armor divisors.",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "RrTOrjD91UiTrvmr",
+      "type": 0,
+      "text": "The blow does double damage.",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "9XBZotutrS9zrlCq",
+      "type": 0,
+      "text": "The blow does maximum normal damage.",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "mTQBYRZFRh6fsLyn",
+      "type": 0,
+      "text": "If any damage penetrates DR, treat it as if it were a major wound, regardless of the actual injury inflicted.",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "YMQhzJBfclWUVpyB",
+      "type": 0,
+      "text": "If any damage penetrates DR, it inflicts double normal shock (to a maximum penalty of -8). If the injury is to a limb or extremity, that body part is crippled as well. This is only a \"funny-bone\" injury: crippling wears off in (16 - HT) seconds, minimum two seconds, unless the injury was enough to cripple the body part anyway.",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "CdYwMb9N5nngGT9l",
+      "type": 0,
+      "text": "Normal damage only.",
+      "weight": 1,
+      "range": [
+        9,
+        11
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "ZhYeQG7iAKBh8CD9",
+      "type": 0,
+      "text": "Normal damage, and the victim drops anything he is holding, regardless of whether any damage penetrates DR.",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "2useLhDuXhQJffnF",
+      "type": 0,
+      "text": "If any damage penetrates DR, treat it as if it were a major wound, regardless of the actual injury inflicted.",
+      "weight": 1,
+      "range": [
+        13,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "C9nMiDRsddYWKkDm",
+      "type": 0,
+      "text": "The blow does maximum normal damage.",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "o1BEGZzx089DmJAj",
+      "type": 0,
+      "text": "The blow does double damage.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "bJx6C0w8iGN9K6Ue",
+      "type": 0,
+      "text": "The targets DR protects at half value (round down) after applying any armor divisors.",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "uZzQJ9qdOGPdFlLa",
+      "type": 0,
+      "text": "The blow does triple damage.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "_stats": {
+    "systemId": "gurps",
+    "systemVersion": "0.16.8",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1712404716284,
+    "lastModifiedBy": "gv2MN52bwnCPf85O"
+  }
+}

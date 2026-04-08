@@ -1,0 +1,30 @@
+{
+  "title": "Alteya: Planets Karnaval",
+  "id": "test",
+  "system": "gurps",
+  "coreVersion": "13.351",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "systemVersion": "0.18.13",
+  "lastPlayed": "Fri Apr 03 2026 00:51:49 GMT+0300 (Восточная Европа, летнее время)",
+  "playtime": 68451,
+  "packs": [
+    {
+      "label": "Mass Edit: Presets (MAIN)",
+      "type": "JournalEntry",
+      "name": "mass-edit-presets-main",
+      "path": "packs/mass-edit-presets-main",
+      "system": "gurps",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "background": "systems/gurps/assets/gurps-background.webp",
+  "description": "",
+  "flags": {}
+}

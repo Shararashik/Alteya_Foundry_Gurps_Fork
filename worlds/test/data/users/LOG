@@ -1,0 +1,7 @@
+2026/04/02-21:11:30.164 8d40 Recovering log #1033
+2026/04/02-21:11:30.166 8d40 Delete type=0 #1033
+2026/04/02-21:11:30.166 8d40 Delete type=3 #1031
+2026/04/03-00:51:49.930 9090 Level-0 table #1038: started
+2026/04/03-00:51:49.931 9090 Level-0 table #1038: 0 bytes OK
+2026/04/03-00:51:49.931 9090 Delete type=0 #1036
+2026/04/03-00:51:49.936 9090 Manual compaction at level-0 from '!users!1YfZl8hvNGq4A2TW' @ 72057594037927935 : 1 .. '!users!TEtUmVTKcWtAGGm7' @ 0 : 0; will stop at (end)

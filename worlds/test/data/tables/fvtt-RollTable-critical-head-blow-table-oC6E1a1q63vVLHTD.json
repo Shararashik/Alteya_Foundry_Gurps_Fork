@@ -1,0 +1,264 @@
+{
+  "name": "Critical Head Blow Table",
+  "img": "systems/gurps/icons/single-die.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "I27dfMbs4UQVOuu0",
+      "type": 0,
+      "text": "The blow does maximum normal damage and ignores the targets DR.",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "0wGBz5UUobhIqyhO",
+      "type": 0,
+      "text": "The targets DR protects at half value (round up) after applying any armor divisors. If any damage penetrates, treat it as if it were a major wound, regardless of the actual injury inflicted.",
+      "weight": 1,
+      "range": [
+        4,
+        5
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "WJnPKqUdeEqBp7iW",
+      "type": 0,
+      "text": "If the attack targeted the face or skull, treat it as an eye hit instead, even if the attack could not normally target the eye! If an eye hit is impossible (e.g., from behind), treat as 4.",
+      "weight": 1,
+      "range": [
+        6,
+        7
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "jPrIDinmSpbgNEOA",
+      "type": 0,
+      "text": "Normal head-blow damage, and the victim is knocked off balance: he must Do Nothing next turn (but may defend normally).",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "7sFytGFxpZxVF80S",
+      "type": 0,
+      "text": "Normal head-blow damage only.",
+      "weight": 1,
+      "range": [
+        9,
+        11
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "PRGrlvSQ4yUpzzgM",
+      "type": 0,
+      "text": "Normal head-blow damage, and if any damage penetrates DR, a crushing attack deafens the victim (for recovery, see Duration of Crippling Injuries, PDF:B422). Any other attack causes severe scarring (the victim loses one appearance level, or two levels if a burning or corrosion attack).",
+      "weight": 1,
+      "range": [
+        12,
+        13
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "uYYG1IPcYzrUT4Z3",
+      "type": 0,
+      "text": "Normal head-blow damage, and the victim drops his weapon (if he has two weapons, roll randomly to see which one he drops).",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "cOdDCYtUfkQKXXTK",
+      "type": 0,
+      "text": "The blow does maximum normal damage.",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "FYqaLCOXdoCdlzCy",
+      "type": 0,
+      "text": "The blow does double damage.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "O35WUu5zaIYPLvs4",
+      "type": 0,
+      "text": "The targets DR protects at half value (round up) after applying any armor divisors.",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "skmBQaZTPyB5vWBL",
+      "type": 0,
+      "text": "The blow does triple damage.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": ""
+          }
+        }
+      },
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "3d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "better-rolltables": {
+      "table-type": "none",
+      "table-currency-string": "",
+      "loot-amount-key": "",
+      "loot-actor-name": ""
+    },
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "_stats": {
+    "systemId": "gurps",
+    "systemVersion": "0.16.8",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1712401543755,
+    "lastModifiedBy": "ieR4T93XC4r3r2Hk"
+  }
+}

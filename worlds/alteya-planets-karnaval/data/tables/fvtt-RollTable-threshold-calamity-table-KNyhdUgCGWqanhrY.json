@@ -1,0 +1,285 @@
+{
+  "name": "Threshold Calamity Table",
+  "img": "systems/gurps/icons/single-die.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "jGKUhLbEYtYQt820",
+      "type": 0,
+      "text": "Nothing happens -- this time.",
+      "weight": 1,
+      "range": [
+        2,
+        8
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Zc4OiCiA0loNekQT",
+      "type": 0,
+      "text": "Until the wizard's tally is reduced to 0, the base cost of casting that spell or ritual is doubled. Increase the multiple by 1 every time this result is rolled again.",
+      "weight": 1,
+      "range": [
+        9,
+        10
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "2Lo3AVqRZhxcSQmS",
+      "type": 0,
+      "text": "As 9, and the wizard has a -1 penalty to cast that spell until his tally is reduced to 0.",
+      "weight": 1,
+      "range": [
+        11,
+        12
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "WZY3Xvjq1TVn1tiO",
+      "type": 0,
+      "text": "As 9, and the wizard has a -1 penalty to cast all spells in the same college until his tally is reduced to 0.",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "qnLnZM49EgggJy7J",
+      "type": 0,
+      "text": "Until the wizard's tally is reduced to 0, the base cost of casting all spells or rituals in the same college are doubled. Increase the multiple by 1 every time this result is rolled again. Also, the wizard has a -1 penalty to cast all spells in the same college until his tally is reduced to 0.",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "xf2NosQNcKeqxLbY",
+      "type": 0,
+      "text": "As 14, but the casting penalty is -2.",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "zORRVKDiyEQY8f3v",
+      "type": 0,
+      "text": "As 15, but the casting penalty is -3.",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "Ibphr8PsmChQz2Nc",
+      "type": 0,
+      "text": "As 16, and the wizard's Magery is reduced by 1 (recalculate threshold and recovery rate based on the new Magery rate). This effective is cumulative. 1 level of Magery is recovered every day that the wizard has a tally of 0, doesn't cast any spells at all, and makes a HT check.",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "WVsJTanQPmkTNliG",
+      "type": 0,
+      "text": "As 17, and as long as the wizard's Magery is reduced, he suffers from Nightmares with a control roll of 9 or less.",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "GoDf6T8GnhPDUrbZ",
+      "type": 0,
+      "text": "As 18, and as long as the wizard's Magery is reduced, he suffers from the -10% version of Radically Unstable Magery ([PDF:TH26]).",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "n64nSGNrL4dckhAD",
+      "type": 0,
+      "text": "As 18, and as long as the wizard's Magery is reduced, he suffers from the -30% version of Radically Unstable Magery ([PDF:TH26]).",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "bK60oVvzjuIObA6o",
+      "type": 0,
+      "text": "As 20, and the wizard is in a Twisted Mana ([PDF:TH60]) zone that only affects him for the next 1d6 hours.",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "9Tzarl8Uvulb7jfI",
+      "type": 0,
+      "text": "As 20, and the wizard is in a Twisted Mana ([PDF:TH60]) zone that only affects him for the next 1d6 days.",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "g0FBjTdWzN6LTzzb",
+      "type": 0,
+      "text": "As 20, and the wizard is in a Twisted Mana ([PDF:TH60]) zone with a radius equal to his base Magery (minimum 1) for the next 1d6 days.",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "7H8gfoMxSSc5xA0M",
+      "type": 0,
+      "text": "As 20, and the wizard is in a Twisted Mana ([PDF:TH60]) zone with a radius equal to his current Magery (minimum 1) until is Magery completely recovers and for 1d6 days after that.",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "0HpalWT9sEbyeSKG",
+      "type": 0,
+      "text": "As 20, and the wizard is also a Mana Dampener with the same radius of affect as the Twisted Mana zone.",
+      "weight": 1,
+      "range": [
+        25,
+        28
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "zfh4YM78LGLa8vMu",
+      "type": 0,
+      "text": "The wizard takes (Calamity Modifier / 20)d of injury, reduced by half on a successful HT-6 check. If the wizard dies from this injury, their body explodes (reducing the wizard to -10xHP in the process) and doing the same damage as a cr ex centered on the wizard's hex. Should the wizard survive, also apply the effects of 25, above.",
+      "weight": 1,
+      "range": [
+        29,
+        100
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/single-die.webp",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "2d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "better-rolltables": {
+      "table-type": null
+    },
+    "exportSource": {
+      "world": "chalandra",
+      "system": "gurps",
+      "coreVersion": "11.315",
+      "systemVersion": "0.16.10"
+    }
+  },
+  "_stats": {
+    "systemId": "gurps",
+    "systemVersion": "0.16.6",
+    "coreVersion": "11.313",
+    "createdTime": null,
+    "modifiedTime": 1697509515609,
+    "lastModifiedBy": "gv2MN52bwnCPf85O"
+  }
+}

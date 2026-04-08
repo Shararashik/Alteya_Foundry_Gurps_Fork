@@ -1,0 +1,16 @@
+.quick-contest-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#compare-button {
+    margin-top: 15px;
+}
+
+#versus {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

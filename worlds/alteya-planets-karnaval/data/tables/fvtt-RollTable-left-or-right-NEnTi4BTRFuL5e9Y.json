@@ -1,0 +1,57 @@
+{
+  "name": "Left or Right",
+  "img": "systems/gurps/icons/die-new.png",
+  "results": [
+    {
+      "_id": "3n5WF3lAbsbdcgco",
+      "type": "text",
+      "text": "Left",
+      "weight": 1,
+      "range": [
+        1,
+        3
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/die-new.png",
+      "documentCollection": "",
+      "documentId": null
+    },
+    {
+      "_id": "57UoSr6xbOrpDzdB",
+      "type": "text",
+      "text": "Right",
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "drawn": false,
+      "flags": {},
+      "img": "systems/gurps/icons/die-new.png",
+      "documentCollection": "",
+      "documentId": null
+    }
+  ],
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "3raBH607CCN2x7ED",
+  "flags": {
+    "exportSource": {
+      "world": "aersalus-d1-team",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.18"
+    }
+  },
+  "description": "",
+  "_stats": {
+    "systemId": null,
+    "systemVersion": null,
+    "coreVersion": "12.330",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

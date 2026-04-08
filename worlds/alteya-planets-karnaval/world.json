@@ -1,0 +1,57 @@
+{
+  "title": "Alteya: Planets Karnaval Old",
+  "id": "alteya-planets-karnaval",
+  "system": "gurps",
+  "joinTheme": "default",
+  "description": "<div class=\"text\"><div class=\"b-text_with_paragraphs\"><p>В Пятой Академии учиться восемнадцатилетний <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">Сигизмунд</span></span>: целитель, разгильдяй, драчун... и ему достает приглашение на День Основания! По всему миру просыпаются злые силы, 13-ой академии, чудовищные колдуны, которые взывают к запрещенным видам магии и не чтят этику. Чтобы спасти жизнь на Мистериуме и Империи, <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">Харри</span></span> должен укротить тёмные силы, что сидят в нём, и отправиться в Иллариот, где находится уже всем нам знакомый темный маг <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">Лазарь</span></span>, жаждущий крови его семьи. Но дорога длинна, а ещё и целая армия злобных обладателей сил 13-ой академии поджидает на каждом углу, чтобы убить и саму <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">Алаис</span></span> и её друзей...</p></div></div>",
+  "coreVersion": "13.351",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "systemVersion": "0.18.13",
+  "lastPlayed": "Fri Apr 03 2026 17:41:22 GMT+0300 (Восточная Европа, летнее время)",
+  "playtime": 714415,
+  "packs": [
+    {
+      "label": "Custom",
+      "type": "Macro",
+      "name": "custom",
+      "path": "packs/custom",
+      "system": "gurps",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "label": "Mass Edit: Presets (MAIN)",
+      "type": "JournalEntry",
+      "ownership": {
+        "GAMEMASTER": "NONE",
+        "PLAYER": "NONE",
+        "ASSISTANT": "NONE"
+      },
+      "name": "mass-edit-presets-main",
+      "path": "packs/mass-edit-presets-main",
+      "system": "gurps",
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Weapons",
+      "name": "Weapons",
+      "path": "packs/Weapons",
+      "system": "gurps",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "background": "alteya_database/tiles/title_requiem.png",
+  "safeMode": false,
+  "flags": {}
+}
