@@ -10,6 +10,7 @@
       <span class='ms-eqt-equipped'>{{#if showEquipped}}{{localize 'GURPS.equipmentEquipped'}}{{/if}}</span>
       <span class='ms-eqt-qty'>{{localize 'GURPS.equipmentQuantity'}}</span>
       <span class='ms-eqt-name'>{{localize 'GURPS.equipment'}}</span>
+      <span class='ms-eqt-uses'>{{localize 'GURPS.equipmentUses'}}</span>
       <span class='ms-eqt-cost'>$</span>
       <span class='ms-eqt-weight'><i class='fas fa-weight-hanging'></i></span>
       <span class='ms-eqt-ref'>{{localize 'GURPS.pdfRef'}}</span>
@@ -37,6 +38,21 @@
         {{#if hasCollapsed}}<i class='fas fa-caret-right expandcollapseicon' data-key='system.equipment.{{../container}}.{{@key}}'></i>{{/if}}
         {{{gurpslink name}}}
         {{#if notes}}<div class='ms-eqt-notes'>{{{gurpslinkbr notes}}}</div>{{/if}}
+      </span>
+      <span class='ms-eqt-uses'>
+        {{#if (and (ne maxuses 0) (ne maxuses '0'))}}
+          {{#if (isNum uses)}}
+            {{#if (lt uses 1)}}
+              <i class='fa-solid fa-circle-minus equipmentbutton disabled'></i>
+            {{else}}
+              <i class='fa-solid fa-circle-minus equipmentbutton' data-key='system.equipment.{{../container}}.{{@key}}' data-operation='equipment-dec-uses'></i>
+            {{/if}}
+          {{/if}}
+          <span>{{uses}}</span>
+          {{#if (isNum uses)}}
+            <i class='fa-solid fa-circle-plus equipmentbutton' data-key='system.equipment.{{../container}}.{{@key}}' data-operation='equipment-inc-uses'></i>
+          {{/if}}
+        {{/if}}
       </span>
       <span class='ms-eqt-cost'>{{toLocaleString (toNumber cost)}}</span>
       <span class='ms-eqt-weight'>{{toLocaleString (toNumber weight)}}</span>

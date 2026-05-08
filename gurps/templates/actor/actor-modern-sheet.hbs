@@ -1,6 +1,126 @@
 <style>
   .ms-spells-row .ms-row-notes { display: none; }
   .ms-spells-row.expanded .ms-row-notes { display: flex; }
+
+  /* === EQUIPMENT TABLE GRID ===
+     Колонки: equipped | qty | name(flex) | uses | cost | weight | ref | actions
+  */
+  .ms-eqt-header,
+  .ms-eqt-row {
+    display: grid;
+    grid-template-columns: 28px 80px 1fr 80px 60px 60px 60px 56px;
+    align-items: center;
+    gap: 0 4px;
+  }
+
+  .ms-eqt-header {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding: 2px 4px;
+  }
+
+  .ms-eqt-row {
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  .ms-eqt-row:hover {
+    background: rgba(255,255,255,0.04);
+  }
+
+  .ms-eqt-equipped { text-align: center; }
+  .ms-eqt-qty      { display: flex; align-items: center; gap: 4px; justify-content: center; }
+  .ms-eqt-name     { overflow: hidden; }
+  .ms-eqt-uses     { display: flex; align-items: center; gap: 3px; justify-content: center; }
+  .ms-eqt-cost     { text-align: right; }
+  .ms-eqt-weight   { text-align: right; }
+  .ms-eqt-ref      { text-align: center; }
+
+  /* Кнопки edit/delete — прижаты вправо, появляются при ховере */
+  .ms-eqt-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .ms-eqt-row:hover .ms-eqt-actions {
+    opacity: 1;
+  }
+
+  .ms-eqt-actions i {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .ms-eqt-actions i:hover {
+    opacity: 1;
+  }
+
+  [class$="-row"] .ms-row-notes {
+    grid-column: 1 / -1;
+  }
+
+  .ms-spell-details {
+    grid-column: 1 / -1;
+    display: none;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding: 2px 8px 4px;
+    font-size: 0.8em;
+    opacity: 0.75;
+  }
+
+  .ms-spell-detail em {
+    font-style: normal;
+    opacity: 0.6;
+  }
+
+  .ms-spells-row.expanded .ms-spell-details {
+    display: flex;
+  }
+
+  /* === GRID С КОЛОНКОЙ ACTIONS === */
+
+  .ms-skills-header,
+  .ms-skills-row,
+  .ms-spells-header,
+  .ms-spells-row {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr 0.7fr 0.7fr 0.7fr 0.6fr;
+    align-items: center;
+  }
+
+  /* имя не ломает строку */
+  .ms-col-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* кнопки */
+  .ms-row-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .ms-row-actions i {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .ms-row-actions i:hover {
+    opacity: 1;
+  }
+
+  /* Скрытие дочерних элементов свёрнутых контейнеров */
+  .ms-child-hidden {
+    display: none !important;
+  }
 </style>
 <form class='{{cssClass}}' autocomplete='off'>
   <div class='modern-sheet'>

@@ -2,15 +2,17 @@
   {{>section-header icon=icon title=title count=count collapsible=true}}
   <div class='ms-section-content'>
     <div class='ms-{{entityType}}-table'>
-      <div class='ms-{{entityType}}-header'>
-        <span>{{localize 'GURPS.name'}}</span>
-        {{#if hasResist}}<span>{{localize 'GURPS.spellResist'}}</span>{{/if}}
-        <span>{{localize 'GURPS.level'}}</span>
-        <span>RSL</span>
-        <span></span>
-      </div>
-      {{#each items}}
-      <div class='ms-{{../entityType}}-row' data-key='{{../path}}.{{@key}}' data-indent='{{indent}}' data-has-children='{{or hasContains hasCollapsed}}'>
+<div class='ms-{{entityType}}-header'>
+  <span>{{localize 'GURPS.name'}}</span>
+  {{#if hasResist}}<span>{{localize 'GURPS.spellResist'}}</span>{{/if}}
+  <span>{{localize 'GURPS.level'}}</span>
+  <span>RSL</span>
+  <span>{{localize 'GURPS.abbrevRef'}}</span>
+  <span>Actions</span>
+</div>
+      {{#each (flatlist items)}}
+      {{#unless isCollapsed}}
+      <div class='ms-{{../entityType}}-row' data-key='{{../path}}.{{@key}}' data-indent='{{indent}}' data-has-children='{{#if (or hasContains hasCollapsed)}}true{{else}}false{{/if}}'>
         <span class='ms-col-name indent{{indent}}'>
           {{#if (or hasContains hasCollapsed)}}<i class='fas fa-caret-down ms-container-icon'></i>{{/if}}
           <span class='ms-col-name-text'>{{this.name}}</span>
@@ -18,9 +20,22 @@
         {{#if ../hasResist}}<span class='ms-col-resist'>{{this.resist}}</span>{{/if}}
         <span class='ms-col-level'>{{#if this.level}}{{>dice-button otf=(concat ../otfPrefix ':"' this.name '"') level=this.level}}{{/if}}</span>
         <span class='ms-col-rsl'>{{this.relativelevel}}</span>
+        <span class='ms-col-ref'>{{{pdflinkext this}}}</span>
         {{>row-actions editAction=../editAction deleteAction=../deleteAction key=(concat ../path '.' @key)}}
+        {{#if ../hasSpellDetails}}
+        <div class='ms-spell-details'>
+          {{#if this.class}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellClass'}}:</em> {{this.class}}</span>{{/if}}
+          {{#if this.college}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellCollege'}}:</em> {{this.college}}</span>{{/if}}
+          {{#if this.cost}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellCost'}}:</em> {{this.cost}}</span>{{/if}}
+          {{#if this.maintain}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellMaintain'}}:</em> {{this.maintain}}</span>{{/if}}
+          {{#if this.casttime}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellTime'}}:</em> {{this.casttime}}</span>{{/if}}
+          {{#if this.duration}}<span class='ms-spell-detail'><em>{{localize 'GURPS.spellDuration'}}:</em> {{this.duration}}</span>{{/if}}
+          {{#if this.points}}<span class='ms-spell-detail'><em>{{localize 'GURPS.abbrevPoints'}}:</em> {{this.points}}</span>{{/if}}
+        </div>
+        {{/if}}
         {{>row-notes notes=this.notes}}
       </div>
+      {{/unless}}
       {{else}}
       <div class='ms-empty'>{{localize 'GURPS.none'}}</div>
       {{/each}}

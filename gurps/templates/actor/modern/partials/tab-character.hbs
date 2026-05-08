@@ -17,7 +17,7 @@
   icon="fa-graduation-cap"
   title=(localize "GURPS.skills")
   count=skillCount
-  items=(flatlist system.skills)
+  items=system.skills
   path="system.skills"
   entityType="skills"
   otfPrefix="Sk"
@@ -33,7 +33,7 @@
   section="spells"
   icon="fa-hat-wizard"
   title=(localize "GURPS.spells")
-  items=(flatlist system.spells)
+  items=system.spells
   path="system.spells"
   entityType="spells"
   otfPrefix="Sp"
@@ -42,4 +42,5 @@
   addAction="add-spell"
   addLabel=(localize "GURPS.spell")
   hasResist=true
+  hasSpellDetails=true
 }}
